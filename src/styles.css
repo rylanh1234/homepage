@@ -201,6 +201,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     grid-template-columns: 2fr 3fr;
+    gap: 50px;
 }
 .contact h1 {
     font-weight: 200;
@@ -251,4 +252,62 @@ body {
 .portrait-two {
     grid-column: 2 / 3;
     max-height: 500px;
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        height: 400px;
+        margin-bottom: 275px;
+    }
+    .name {
+        margin: 0;
+        width: 500px;
+        top: 0;
+        left: 80%;
+    }
+    .portrait {
+        height: 300px;
+        width: 300px;
+        float: left;
+        margin: 0 1rem 1rem 0;
+    }
+    .about-me {
+        position: relative;
+        width: 575px;
+        height: 420px;
+        z-index: -1;
+        margin-top: 17.5%;
+        margin-left: 7.5%;
+    }
+    .about-me h1 {
+        text-align: center;
+    }
+    .portrait-div {
+        position: absolute;
+        margin: 50px 50px;
+        display: inline;
+    }
+    .projects {
+        margin: 50px;
+    }
+    .project-one,
+    .project-two,
+    .project-three,
+    .project-four,
+    .project-five,
+    .project-six {
+        width: 305px;
+        height: 350px;
+    }
+    .project-one .screenshot,
+    .project-two .screenshot,
+    .project-three .screenshot,
+    .project-four .screenshot,
+    .project-five .screenshot,
+    .project-six .screenshot{
+        height: 200px;
+    }
+    .contact {
+        padding: 50px 50px;
+    }
 }
