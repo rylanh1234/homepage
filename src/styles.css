@@ -254,7 +254,69 @@ body {
     max-height: 500px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width:599px) {
+    .header {
+        height: 1000px;
+    }
+    .blue-triangle {
+        height: 50%;
+    }
+    .portrait-div {
+        flex-direction: column;
+        margin: 25px 30px;
+        height: 100%;
+    }
+    .portrait {
+        height: calc(50% - 25px);
+        width: 100%;
+        justify-content: start;
+    }
+    .name {
+        margin: 10px;
+        width: 200px;
+        bottom: 0%;
+        font-size: 4.75em;
+    }
+    .about-me {
+        height: calc(50% - 25px);
+        width: 100%;
+        box-shadow: none;
+    }
+    .about-me h1,
+    .projects > h1,
+    .contact h1 {
+        text-align: center;
+    }
+    .about-me ul {
+        justify-self: center;
+    }
+    .projects {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .contact {
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .left > p:nth-of-type(1) {
+        font-size: 1.3em;
+        max-width: none;
+    }
+    .contact ul {
+        justify-content: center;
+    }
+    .portrait-two {
+        margin: -30px;
+        /* line-height: 0; */
+    }
+    .portrait-two img {
+        /* margin-bottom: -5px; */
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
     .header {
         height: 400px;
         margin-bottom: 275px;
